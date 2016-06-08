@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<jnlp codebase="http://localhost:8080/ws" href="wstest.jnlp">
+
+	<information>
+	  <title>HJP3 WebStart Demo Application</title>
+	  <vendor>Johann Mildner, Basel</vendor>
+	  <homepage href="http://localhost:8080/ws"/>
+	  <description>WSTEST</description>
+	  <icon href="wstest.gif"/>
+	  <offline-allowed/>
+	</information>
+
+	<information locale="de">
+	  <description>WSTEST</description>
+	  <offline-allowed/>
+	</information>
+
+	<security>
+	  <all-permissions/>
+	</security>
+
+	<resources>
+	  <j2se version="1.4+"/>
+	  <jar href="ws.jar"/>
+	</resources>
+
+	<application-desc main-class="ch.jmildner.ws.WsTest"/>
+
+</jnlp>

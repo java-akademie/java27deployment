@@ -1,0 +1,39 @@
+<!-- ******************************************* -->
+<!-- * build file for a war-project (WebStart) * -->
+<!-- ******************************************* -->
+<project name="webStart" default="all" basedir=".">
+
+	<property name="PROJECT" value="rechner" />
+
+	<property environment="env" />
+
+	<property name="BUILD" value="build" />
+	
+	<property name="CATALINA.DEPLOY" value="${env.CATALINA_HOME}/webapps" />
+	<property name="JBOSS.DEPLOY" value="${env.JBOSS_HOME}/server/default/deploy" />
+
+
+
+	<target name="package">
+		<war destfile="${BUILD}/${PROJECT}.war" needxmlfile="false" >
+			<fileset dir="${PROJECT}" />
+		</war>
+	</target>
+
+	<target name="deploy" depends="package">
+		<copy file="${BUILD}/${PROJECT}.war" todir="${CATALINA.DEPLOY}" />
+		<copy file="${BUILD}/${PROJECT}.war" todir="${JBOSS.DEPLOY}" />
+	</target>
+
+	<target name="undeploy">
+		<delete file="${CATALINA.DEPLOY}/${PROJECT}.war" />
+		<delete file="${JBOSS.DEPLOY}/${PROJECT}.war" />
+	</target>
+
+	<target name="clean">
+		<delete dir="${BUILD}" />
+	</target>
+
+	<target name="all" depends="clean,package,deploy" />
+
+</project>

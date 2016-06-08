@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<jnlp codebase="http://localhost:8080/rechner" href="rechner.jnlp">
+
+	<information>
+	  <title>Rechner</title>
+	  <vendor>Johann Mildner, Basel</vendor>
+	  <homepage href="http://localhost:8080/rechner"/>
+	  <offline-allowed/>
+	</information>
+
+	<security>
+	  <!-- <all-permissions/> -->
+	</security>
+	
+	
+	<resources>
+	  <j2se version="1.4+"/>
+	  <jar href="rechner.jar"/>
+	</resources>
+
+	<application-desc main-class="ch.jmildner.gui.rechner.RechnerFrame"/>
+
+</jnlp>

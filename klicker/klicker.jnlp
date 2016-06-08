@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<jnlp codebase="http://localhost:8080/klicker" href="klicker.jnlp">
+
+	<information>
+	  <title>Klicker</title>
+	  <vendor>Johann Mildner, Basel</vendor>
+	  <homepage href="http://localhost:8080/klicker"/>
+	  <offline-allowed/>
+	</information>
+
+	<security>
+	  <all-permissions/>
+	</security>
+	
+	
+	<resources>
+	  <j2se version="1.8+"/>
+	  <jar href="klicker.jar"/>
+	</resources>
+
+	<application-desc main-class="ch.jmildner.ws.WsTest"/>
+
+</jnlp>

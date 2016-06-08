@@ -1,0 +1,2 @@
+Main-Class: ch.jmildner.hallo.Hallo
+Class-Path: mytools.jar
