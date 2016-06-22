@@ -16,3 +16,4 @@ cd ..
 copy  ws.war %CATALINA_HOME%\webapps
 
 pause
+
