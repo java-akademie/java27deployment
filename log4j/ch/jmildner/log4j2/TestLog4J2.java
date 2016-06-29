@@ -17,7 +17,7 @@ public class TestLog4J2
 
 	private void go()
 	{
-		log.fatal("2 fatal");
+		log.fatal("2 fatal xxx");
 		log.error("2 error");
 		log.warn("2 warn");
 		log.info("2 info");

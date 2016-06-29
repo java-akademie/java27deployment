@@ -11,7 +11,7 @@ public class TestLog4J1
 
 	public static void main(String[] args) throws InterruptedException
 	{
-		LOG.fatal("1 fatal");
+		LOG.fatal("1 fatal yyy");
 		LOG.error("1 error");
 		LOG.warn("1 warn");
 
