@@ -1,6 +1,6 @@
 package ch.jmildner.doku;
 
-import ch.java_akademie.tools.MyTools;
+//import ch.java_akademie.tools.MyTools;
 
 //import ch.jmildner.tools.MyTools;
 
@@ -58,7 +58,7 @@ public class DokuTest
 	public static void main(String[] args)
 	{
 		new DokuTest();
-		MyTools.pause();
+		// MyTools.pause();
 	}
 
 	/**
