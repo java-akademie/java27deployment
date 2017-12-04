@@ -9,7 +9,7 @@
 
 	<property name="BUILD" value="build" />
 	
-	<property name="CATALINA.DEPLOY" value="${env.CATALINA_HOME}/webapps" />
+	<property name="CATALINA.DEPLOY" value="../../utils/apache-tomcat-8.5.23/webapps" />
 	<property name="JBOSS.DEPLOY" value="${env.JBOSS_HOME}/server/default/deploy" />
 
 
@@ -22,12 +22,10 @@
 
 	<target name="deploy" depends="package">
 		<copy file="${BUILD}/${PROJECT}.war" todir="${CATALINA.DEPLOY}" />
-		<copy file="${BUILD}/${PROJECT}.war" todir="${JBOSS.DEPLOY}" />
 	</target>
 
 	<target name="undeploy">
 		<delete file="${CATALINA.DEPLOY}/${PROJECT}.war" />
-		<delete file="${JBOSS.DEPLOY}/${PROJECT}.war" />
 	</target>
 
 	<target name="clean">
