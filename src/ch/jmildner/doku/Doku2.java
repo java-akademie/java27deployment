@@ -30,7 +30,7 @@ public class Doku2
 
 
 	/**
-	 * @return
+	 * @return ein Int
 	 */
 	public int getXx()
 	{

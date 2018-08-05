@@ -7,21 +7,21 @@ package ch.jmildner.doku;
 /**
  * <b>Uebungsprojekt</b>
  * 
- * <br/>
- * Kapitel: Dokumentation <br/>
+ * <br>
+ * Kapitel: Dokumentation <br>
  * 
- * <hr/>
+ * <hr>
  * 
  * Diese Klasse dient einer Uebung zu <code>javadoc</code>
  * 
- * <hr/>
+ * <hr>
  * 
  * weitere Beschreibungen und Hinweise
  * 
- * <hr/>
+ * <hr>
  * Liste:
  * 
- * <br/>
+ * <br>
  * 
  * hier kann eine Aufzahelung oder Liste kommen
  * 
@@ -44,7 +44,7 @@ package ch.jmildner.doku;
  * @author Johann Mildner, Basel
  * @version 1.0, 07.01.2004
  */
-public class DokuTest
+public final class DokuTest
 {
 	/**
 	 * die main-Methode dient lediglich waehrend der Entwicklungsphase
@@ -78,9 +78,9 @@ public class DokuTest
 	 * Regel dass der Text bis zum Punkt in der Uebersicht ausgegeben
 	 * wird; der Text nach dem Punkt kommt dann in der
 	 * Detailbeschreibung &lt;p /&gt; sollte dem Punkt folgen.
-	 * <p />
+	 * <p>
 	 * das Programm ist als herkoemmliches Konsolprogramm zu sehen
-	 * <p />
+	 * <p>
 	 * die Programmsteuerung beinhaltet:
 	 * 
 	 * <pre>

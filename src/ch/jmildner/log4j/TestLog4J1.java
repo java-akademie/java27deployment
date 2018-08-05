@@ -1,4 +1,4 @@
-package ch.jmildner.log4j1;
+package ch.jmildner.log4j;
 
 import org.apache.log4j.Logger;
 
